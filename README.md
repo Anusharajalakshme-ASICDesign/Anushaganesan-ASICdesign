@@ -2,21 +2,23 @@
 
 # My Journey: From Mentee to Mentor
 
-Master's qualified **Senior Staff SoC Design Engineer** with over a decade of experience in the semiconductor industry. My career has been defined by a "Physical-Aware" approach to Front-End design ensuring that high-level architectural intent translates seamlessly into high-yield GDSII.
+Master's qualified **Senior Staff SoC Design Engineer** with over a decade of international experience in the semiconductor industry. My career has been defined by a "Physical-Aware" approach to Front-End design ensuring that high-level architectural intent translates seamlessly into high-yield GDSII.   
+* 4+ years with Infineon (Austin, TX, USA) – November 2021 –present 
+* 5+ years with Microchip (Chennai, India) – July 2014 to January 2020.
 
 #### **The Foundation: RTL Design & IP Ownership**
 I began my journey mastering the fundamentals of **Verilog/SystemVerilog**, focusing on high-speed digital design and modular IP development. My early successes involved delivering timing-clean blocks and mastering the nuances of the ASIC design flow.
 
 #### **The Scaling Phase: SoC Integration & Tape-out Rigor**
 Transitioning into Senior and Staff roles, I took ownership of complex **SoC Integration**, managing 25+ IP blocks and diverse mixed-signal wrappers. 
-* **Key Milestone:** Achieved a track record of **8 successful tape-outs** on advanced nodes.
+* **Key Milestone:** Achieved a track record of **8 successful tape-outs** on advanced nodes. 
 * **Impact:** Optimized designs for high-bandwidth interconnects and complex arbitration logic.
 
 #### **The Leadership Phase: Global Methodology & Sign-off Standards**
-Currently, I serve as a **Senior Staff Lead**, where I define the standards for how silicon is verified and delivered.
+Currently, I serve as a **Technical Lead**, mentored and coached junior engineers on tools and design standards.
 * **Methodology:** Pioneered global automation for **CDC/RDC** and **LEC/FEC** flows using tools like VC SpyGlass and Conformal.
-* **PPA Excellence:** Championed low-power design strategies (UPF), consistently delivering **20% dynamic power reductions** across major product lines.
-* **Collaboration:** Acting as the bridge between Front-End architecture and Back-End physical design to ensure first-pass silicon success.
+* **IP design lead:** orchestrated the micro-architecture, digital design, power analysis, LEC, code review and test plans for mixed-signal IPs.
+* * **Collaboration:** Acting as the bridge between Front-End architecture, verification and Back-End physical design to ensure first-pass silicon success.
 
 ### 🛠️ Technical Toolkit
 * **Core:** SoC Integration, RTL Design, IP Leadership, Verilog, System verilog
