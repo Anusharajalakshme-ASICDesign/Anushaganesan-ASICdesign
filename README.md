@@ -16,7 +16,7 @@ Transitioning into Senior and Staff roles, I took ownership of complex **SoC Int
 
 #### **The Leadership Phase: Global Methodology & Sign-off Standards**
 Currently, I serve as a **Technical Lead**, mentored and coached junior engineers on tools and design standards.
-* **Methodology:** Pioneered global automation for **CDC/RDC** and **LEC/FEC** flows using tools like VC SpyGlass and Conformal.
+* **Methodology:** Pioneered global automation for **CDC/RDC** and **LEC/FEC** flows using tools like VC SpyGlass, 0in questa, formality and Conformal.
 * **IP design lead:** orchestrated the micro-architecture, digital design, power analysis, LEC, code review and test plans for mixed-signal IPs.
 * * **Collaboration:** Acting as the bridge between Front-End architecture, verification and Back-End physical design to ensure first-pass silicon success.
 
