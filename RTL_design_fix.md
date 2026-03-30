@@ -33,14 +33,3 @@
 * [cite_start]**Impact:** **Eliminated system-level deadlocks** during multi-tasking and provided architectural flexibility for firmware to tune bus performance based on real-time security workloads.
 * [cite_start]**Takeaway:** Static arbitration is often insufficient for complex SoCs; implementing programmable priority registers is essential for robust, "deadlock-proof" multi-master designs.
 </details>
-
-<details>
-<summary><b>🔌 USB Downstream Port-Power & Over-Current Sense (OCS) Optimization</b></summary>
-
-* **Situation:** USB2 and USB3 downstream ports utilized a shared-pin configuration for Port Power and Over-Current Sense (OCS). The RTL used a 4ms timer to filter OCS events (where a weak zero signaled an over-current event) to ensure valid reporting for power-off sequences.
-* **Task:** Resolve a post-silicon failure where the initial power ramp-up on the VBUS line was being incorrectly identified as a valid OCS event, causing the ports to fail to power up properly.
-* **Action:** Diagnosed that the initial voltage ramp lasted longer than the 4ms RTL filter, creating a false-positive OCS trigger. I redesigned the RTL to include a dedicated 10ms debounce timer at the start of the power-on sequence to mask the initial power surge.
-* **Result:** Successfully validated the fix in post-silicon, ensuring downstream ports powered up correctly without false over-current triggers.
-* **Impact:** **Ensured 100% functional reliability of USB power delivery** across all downstream ports and established a robust hardware debounce methodology for shared-pin power/sense architectures.
-* **Takeaway:** Post-silicon validation requires a deep understanding of analog electrical characteristics (like power ramp-up) that are often simplified in RTL and Gate-Level Simulations (GLS).
-</details>
