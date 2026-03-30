@@ -37,10 +37,10 @@
 <details>
 <summary><b>⏱️ High-Complexity CDC Sign-off & Noise Reduction (0-in/Mentor Graphics)</b></summary>
 
-* **Situation:** Using Mentor Graphics 0-in for CDC sign-off on a multi-protocol SoC involving CPU (60MHz), USB2 (60MHz), and USB3 (125MHz) domains. Initial tool runs reported over **100,000 violations**, primarily due to unrecognized synchronization logic and clock grouping issues.
+* **Situation:** Using Mentor Graphics 0-in for CDC sign-off on a multi-protocol SoC involving (60MHz), (60MHz), and (125MHz) domains. Initial tool runs reported over **100,000 violations**, primarily due to unrecognized synchronization logic and clock grouping issues.
 * **Task:** Reduce noise, identify genuine asynchronous hazards, and establish a repeatable, high-confidence CDC sign-off flow using SDC inputs and behavioral models.
 * **Action:** * Implemented **Custom Synchronizer** definitions to explicitly map FIFO and pulse-synchronizer behavioral models for tool recognition.
 * **Result:** Successfully reduced 100k violations to a clean, verified sign-off state, ensuring stable data transfer across asynchronous boundaries.
-* **Impact:** **Established a high-integrity CDC sign-off methodology** that eliminated manual review overhead and guaranteed the reliability of high-speed USB3-to-CPU data paths.
+* **Impact:** **Established a high-integrity CDC sign-off methodology** that eliminated manual review overhead and guaranteed the reliability of high-speed data paths.
 * **Takeaway:** Effective CDC sign-off is not just about running a tool; it requires a deep understanding of the design's clock architecture and the ability to "teach" the tool to recognize custom synchronization hardware.
 </details>
