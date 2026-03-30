@@ -1,8 +1,8 @@
 # Anushaganesan-ASICdesign
 
-# My Journey: From Mentee to Tech leader
+# Senior Staff SoC Design Enginee : From Mentee to Tech leader
 
-Master's qualified **Senior Staff SoC Design Engineer** with over a decade of international experience in the semiconductor industry. My career has been defined by a "Physical-Aware" approach to Front-End design ensuring that high-level architectural intent translates seamlessly into high-yield GDSII.   
+Master's qualified **Senior Staff** with over a decade of international experience in the semiconductor industry. My career has been defined by a "Physical-Aware" approach to Front-End design with deep understanding of back-end ensuring that high-level architectural intent translates seamlessly into high-yield GDSII.   
 * 4+ years with Infineon (Austin, TX, USA) – November 2021 –present 
 * 5+ years with Microchip (Chennai, India) – July 2014 to January 2020.
 
