@@ -9,7 +9,7 @@ Master's qualified **Senior Staff** with over a decade of international experien
 #### **Silicon Success stories**
 These emphasizes end-to-end ownership from RTL to Tape-out.
 
-* https://github.com/Anusharajalakshme-ASICDesign/Anusharajalakshme/blob/main/RTL_design_fix.md
+* https://github.com/Anusharajalakshme-ASICDesign/Anusharajalakshme/blob/main/RTL_Improvements.md
 * https://github.com/Anusharajalakshme-ASICDesign/Anusharajalakshme/blob/main/Methodologies_Optimization.md
 * https://github.com/Anusharajalakshme-ASICDesign/Anusharajalakshme/blob/main/Cross_functional_collaboration.md
 
