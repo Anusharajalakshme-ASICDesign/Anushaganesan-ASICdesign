@@ -2,14 +2,14 @@
 *High-impact technical challenges and leadership outcomes:*
 
 <details>
-<summary><b>⚡ High-Yield PPA Optimization </b></summary>
+<summary><b>⚡ Architecting Modular, Reusable SoC Design Flows </b></summary>
 
-* **Situation:** A high-performance PSoC family required extreme power efficiency for real-time IoT and machine learning applications.
-* **Task:** Led design and PPA optimization for a high-performance PSoC subsystem platform by restructuring it into modular, power-aware IP blocks with independent power domains.
-* **Action:** Introduced scalable low-power design practices that enabled dynamic configurability and improved integration across multiple subsystems.
-* **Result:** Achieved **20% reduction in dynamic power** and **~60% improvement** in design reusability.
-* **Impact:** Established a reusable low-power design framework adopted across **derivative SoCs**, accelerating future development cycles and improving overall design efficiency.
-* **Takeaway:** Strategic modularization of RTL not only solves immediate PPA targets but creates a long-term **design for reusability** framework that accelerates future product cycles.
+* **Situation:** A high-performance PSoC family required extreme power efficiency and integration flexibility to support real-time IoT and machine learning applications. The existing subsystem was monolithic, hindering reusability and slowing derivative SoC development.
+* **Task:** Led the design and PPA optimization for a high-performance subsystem by restructuring **10 monolithic modules into modular, power-aware IP blocks with independent power domains**. I served as **IP lead for few of the refactored units** and **designed one IP from scratch**, establishing modular UPF flows, timing constraints, and verification standards.
+* **Action:** Introduced scalable low-power and modular design practices that enabled dynamic configurability and streamlined integration.
+* **Result:** Achieved a **20% reduction in dynamic power**. Delivered a **~60% improvement in design reusability**. The modular design framework has been applied across multiple derivative SoCs, **accelerating development cycles** and enabling faster first-pass silicon success.
+* **Impact:** Established a reusable low-power design and integration methodology adopted across **several SoC families**, improving both power-performance-area (PPA) efficiency and organizational scalability.
+* **Takeaway:** Strategic modularization of RTL not only achieves immediate PPA targets but creates a **long-term design-for-reusability framework**, demonstrating technical leadership, innovation in methodology, and the ability to influence stakeholders to adopt transformative solutions.
 </details>
 
 <details>
