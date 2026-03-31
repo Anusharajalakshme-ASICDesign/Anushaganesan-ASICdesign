@@ -4,14 +4,11 @@
 <details>
 <summary><b>🔍 High-Stakes GLS Debug & ECO </b></summary>
 
-* **Situation:** During the final sign-off phase, SoC-level Gate-Level Simulation (GLS) failed for a critical IP, despite passing all functional RTL verification. The failure was traced to a contradiction between the RTL and the physical netlist regarding flop retention behavior.
-* **Task:** Identify the root cause of the behavior mismatch and implement an Emergency Change Order (ECO) to resolve the discrepancy without delaying the fast-approaching tape-out.
-* **Action:** I performed a deep-dive debug and discovered the issue originated in the **Unified Power Format (UPF)** list definitions, which the synthesis tool had failed to recognize. As the IP Design Lead, I took sole responsibility for the resolution:
-    * Proposed a strategic workaround to modify the register behavior, bypassing the synthesis limitation.
-    * Manually implemented the ECO across all levels of netlists to save critical implementation time.
-    * Guided for **Logical Equivalence Checking (LEC)** to ensure the fix was functionally perfect.
-* **Result:** Successfully synchronized the RTL, UPF, and Netlist behavior, allowing the SoC to meet its sign-off milestones on schedule. I subsequently updated the master RTL and UPF libraries to prevent recurrence in future product generations.
-* **Impact:** **Prevented a major tape-out delay** by taking technical ownership beyond my standard scope and received management recognition for rapid, high-pressure problem-solving.
+* **Situation:** During the final sign-off phase, SoC-level Gate-Level Simulation (GLS) failed for a critical IP, despite passing all functional RTL verification. The failure was traced to a mismatch between the RTL and the netlist retention behavior.
+* **Task:** Led resolution of a critical SoC-level GLS failure and executed ECO across multiple netlist levels and ensured LEC closure under aggressive tapeout timelines.
+* **Action:** Identified a systemic gap in UPF specification handling by synthesis, and drove a cross-domain fix spanning RTL, UPF, and netlist implementation.    
+* **Result:** Successfully synchronized the RTL, UPF, and Netlist behavior, allowing the SoC to meet its sign-off milestones on schedule. I subsequently solved, prevented recurrence and influenced methodology for future projects.
+* **Impact:** **Prevented multi-week tapeout delay** and improved robustness of low-power signoff methodology across subsequent designs. 
 * **Takeaway:** Senior leadership is defined by the ability to remain calm under extreme tape-out pressure and provide optimal, "out-of-the-box" solutions. By going above and beyond my defined role to manage the ECO and LEC personally, I ensured the team overcame a critical crisis that could have resulted in a multi-week schedule slip.
 </details>
 
@@ -19,10 +16,10 @@
 <summary><b>🛠️ Silicon Reliability & Burn-in Fix </b></summary>
 
 * **Situation:** Silicon failed reliability tests after three days of burn-in due to an unexpected CPU sleep mode during FW inactivity.
-* **Task:** Identify the root cause of the BIST-mode failure and implement a hardware fix for the production silicon.
-* **Action:** Collaborated with Post-Silicon Validation to diagnose the FW/HW conflict, updated the design to shut down the MCU during these cycles, and added debug straps for future visibility.
-* **Result:** Fix verified across all corners in GLS, resulting in a **100% success rate** for the production chip.
-* **Impact:** **Ensured 100% production-ready silicon for the B0 revision** and established a permanent validation procedure for all subsequent SoCs.
+* **Task:** Diagnosed silicon reliability failure during burn-in caused by unintended firmware-triggered CPU sleep states under idle conditions.
+* **Action:** Drove cross-functional debug across post-silicon validation and firmware teams, identifying a HW/FW interaction gap. Implemented design changes to enforce deterministic hardware behavior and introduced debug visibility mechanisms.
+* **Result:** Established validation checks and HW/FW interaction guidelines adopted in subsequent SoCs, ensuring consistent reliability under stress conditions.
+* **Impact:** Enabled **100% pass rate** for production silicon and improved robustness of post-silicon validation strategy across multiple projects.
 * **Takeaway:** Post-silicon success requires a "big picture" understanding of how firmware and hardware interact under extreme reliability conditions.
 </details>
 
@@ -30,9 +27,9 @@
 <summary><b>🔌 USB Downstream Port-Power & Over-Current Sense (OCS) Optimization</b></summary>
 
 * **Situation:** USB downstream ports utilized a shared-pin configuration for Port Power and Over-Current Sense (OCS). The RTL used a 4ms timer to filter OCS events (where a weak zero signaled an over-current event) to ensure valid reporting for power-off sequences.
-* **Task:** Resolve a post-silicon failure where the initial power ramp-up on the VBUS line was being incorrectly identified as a valid OCS event, causing the ports to fail to power up properly.
-* **Action:** Diagnosed that the initial voltage ramp lasted longer than the 4ms RTL filter, creating a false-positive OCS trigger. I redesigned the RTL to include a dedicated 10ms debounce timer at the start of the power-on sequence to mask the initial power surge.
-* **Result:** Successfully validated the fix in post-silicon, ensuring downstream ports powered up correctly without false over-current triggers.
-* **Impact:** **Ensured 100% functional reliability of USB power delivery** across all downstream ports and established a robust hardware debounce methodology for shared-pin power/sense architectures.
+* **Task:** Resolved post-silicon failure in USB downstream power delivery caused by mismatch between RTL timing assumptions and real analog power ramp behavior.
+* **Action:** Identified limitation in existing debounce logic and redesigned power-on sequencing to incorporate hardware-aware timing margins.
+* **Result:** Introduced a robust debounce methodology for shared power/sense interfaces, improving reliability across similar mixed-signal designs.
+* **Impact:** Ensured stable power delivery across all downstream ports and **influenced design practices** for handling analog-digital boundary conditions.
 * **Takeaway:** Post-silicon validation requires a deep understanding of analog electrical characteristics (like power ramp-up) that are often simplified in RTL and Gate-Level Simulations (GLS).
 </details>
