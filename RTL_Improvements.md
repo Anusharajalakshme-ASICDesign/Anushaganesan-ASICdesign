@@ -5,7 +5,7 @@
 <summary><b>⚡ High-Yield PPA Optimization </b></summary>
 
 * **Situation:** A high-performance PSoC family required extreme power efficiency for real-time IoT and machine learning applications.
-* **Task:** Led PPA optimization for a high-performance PSoC platform by restructuring subsystem into modular, power-aware IP blocks with independent power domains.
+* **Task:** Led design and PPA optimization for a high-performance PSoC subsystem platform by restructuring it into modular, power-aware IP blocks with independent power domains.
 * **Action:** Introduced scalable low-power design practices that enabled dynamic configurability and improved integration across multiple subsystems.
 * **Result:** Achieved **20% reduction in dynamic power** and **~60% improvement** in design reusability.
 * **Impact:** Established a reusable low-power design framework adopted across **derivative SoCs**, accelerating future development cycles and improving overall design efficiency.
