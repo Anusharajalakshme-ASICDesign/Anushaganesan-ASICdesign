@@ -48,3 +48,18 @@
 * **Impact:** **Established a high-integrity CDC sign-off methodology** Eliminated false-positive noise and established a repeatable CDC signoff methodology using SDC and behavioral modeling.
 * **Takeaway:** Effective CDC sign-off is not just about running a tool; it requires a deep understanding of the design's clock architecture and the ability to "teach" the tool to recognize custom synchronization hardware.
 </details>
+
+</details>
+
+<details>
+<summary><b> RTL-to-RTL LEC Optimization and Standardization </b></summary>
+
+* **Situation:** **Audited a legacy** LEC flow by disabling X-propagation bypasses to ensure design integrity. Found that 3rd-party IP with 'X' default assignments caused logic cone stalls, **increasing runtimes by 10x**.
+* **Task:** During the audit, the run **stalled** due to complex logic cones created by 'X'. I needed to distinguish between tool-induced latency and actual design risks.
+* **Action:** Root-caused the bottleneck and implemented a Cadence-recommended command configuration. Established a **two-step protocol**: an initial unrestricted run to catch design flaws, followed by optimized scripts for runtime efficiency.
+* **Result:** Identified a critical design issue and escalated it for future projects. Established the "**Golden Standard**" for all upcoming RTL-to-RTL LEC projects.
+* **Impact:** Improved verification reliability by prioritizing "**Quality-First**" audits before applying performance optimizations, successfully scaling the methodology across the SoC integration team.
+* **Takeaway:** Prioritize design confidence over legacy verification assumptions.
+</details>
+
+</details>
