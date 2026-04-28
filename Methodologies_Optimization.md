@@ -52,7 +52,7 @@
 </details>
 
 <details>
-<summary><b> RTL-to-RTL LEC Optimization and Standardization </b></summary>
+<summary><b> RTL-to-RTL LEC - "X" propagation Analysis </b></summary>
 
 * **Situation:** **Audited a legacy** LEC flow by disabling X-propagation bypasses to ensure design integrity. Found that 3rd-party IP with 'X' default assignments caused logic cone stalls, **increasing runtimes by 10x**.
 * **Task:** During the audit, the run **stalled** due to complex logic cones created by 'X'. I needed to distinguish between tool-induced latency and actual design risks.
